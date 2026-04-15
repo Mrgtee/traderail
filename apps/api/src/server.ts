@@ -67,7 +67,7 @@ const agentRegistry = new ethers.Contract(
 );
 
 const enableX402 = env.ENABLE_X402.toLowerCase() === "true";
-const networkId = `eip155:${env.CHAIN_INDEX}`;
+const networkId: `${string}:${string}` = `eip155:${env.CHAIN_INDEX}`;
 
 if (enableX402) {
   const facilitatorClient = new OKXFacilitatorClient({
