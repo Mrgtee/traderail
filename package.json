@@ -1,0 +1,17 @@
+{
+  "name": "traderail",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "contracts"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace apps/web run dev",
+    "dev:api": "npm --workspace apps/api run dev",
+    "build:web": "npm --workspace apps/web run build",
+    "build:api": "npm --workspace apps/api run build",
+    "contracts:compile": "npm --workspace contracts run compile",
+    "contracts:deploy:testnet": "npm --workspace contracts run deploy:testnet",
+    "contracts:deploy:mainnet": "npm --workspace contracts run deploy:mainnet"
+  }
+}
